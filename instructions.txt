@@ -1,0 +1,12 @@
+# 1. Create & activate a virtual environment
+python -m venv lab-environment
+source lab-environment/bin/activate          # Windows: .\lab-environment\Scripts\activate.bat
+
+# 2. Upgrade pip and wheel
+python -m pip install --upgrade pip wheel
+
+# 3. Install the requested libraries
+pip install pandas numpy matplotlib folium==0.16.0 notebook ipykernel
+
+# 4. Register the venv as a Jupyter kernel
+python -m ipykernel install --user --name=lab-environment --display-name "Python (lab-environment)"
